@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+header {
+    background-color: #EAC926;
+    flex-direction: column
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+main section{
+    width: 90vw;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+.precio {
+    font-size: 18px;
+    flex-direction: column;
+}
+
+.descuento {
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.descrip {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    flex-direction: column;
+}
+
+i {
+    size: 2em;
+    margin-bottom: 10px;
+}
