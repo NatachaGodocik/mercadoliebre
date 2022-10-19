@@ -6,9 +6,9 @@ const path = require('path');
 const publicPath = path.resolve('public')
 app.use(express.static(publicPath));
 
-const puerto = 3030
+const puerto = process.env.PORT || 3001;
 app.listen (puerto, () =>{
-    console.log ('Servidor corriendo')
+    console.log ('Servidor corriendo en el puerto 3001')
 });
 
 app.get('/', (req, res) => {

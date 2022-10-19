@@ -16,7 +16,7 @@
     padding-right: 10px;
 }
 
-.logobarra{
+.logobarra {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,14 +27,14 @@
     width: 50%;
 }
 
-.barra-busqueda{
+.barra-busqueda {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.barra-busqueda input{
+.barra-busqueda input {
     padding: 6px;
     border-style: none;
     border-top-left-radius: 6px;
@@ -42,11 +42,11 @@
     width: 80%;
 }
 
-.barra-busqueda i{
+.barra-busqueda i {
     align-self: center;
     justify-self: center;
     padding: 5px;
-    }
+}
 
 .lupa {
     border-style: none;
@@ -71,7 +71,7 @@ li {
     list-style-type: none;
 }
 
-header nav{
+header nav {
     margin: 10px 0px 10px 0px;
     display: none;
 }
@@ -81,7 +81,8 @@ body {
     background-color: #ebebeb;
 }
 
-.listapag, .listacuenta {
+.listapag,
+.listacuenta {
     display: none;
 }
 
@@ -92,7 +93,7 @@ body {
     margin: auto;
 }
 
-.botonmenu i{
+.botonmenu i {
     color: white;
     background-color: #1259c3;
     padding: 6px;
@@ -126,7 +127,7 @@ body {
     color: #39b54a;
 }
 
-main section{
+main section {
     width: 90vw;
 }
 
@@ -162,7 +163,7 @@ h3 {
 .descripcion {
     width: 100%;
     background-color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -177,20 +178,13 @@ h3 {
 .precio {
     font-size: 18px;
     width: 30%;
-    display: flex;
-    align-items: center;
-    margin: 5px;
 }
 
 .descuento {
     font-size: 16px;
     color: #39b54a;
     width: 70%;
-    justify-self: center;
-    padding-left: 35px;
-    display: flex;
-    align-items: center;
-    margin: 5px;
+    text-align: center;
 }
 
 .descrip {
@@ -223,4 +217,17 @@ footer section i {
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
+}
+
+@media screen and (min-width: 361px) {
+    .descripcion {
+        display: flex;
+        
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .descripcion {
+        display: flex;
+    }
 }
