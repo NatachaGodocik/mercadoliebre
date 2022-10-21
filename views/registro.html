@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado Liebre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <header class="header">
+        <div class="logobarra">
+            <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo de MELI"></a>
+        </div>
+        <form class="barra-busqueda">
+            <input class="input" type="text" name="nombre" placeholder="Buscar productos, marcas">
+            <button type="submit" class="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en coutas y sin tarjeta de Crédito</p>
+        <div class="botonmenu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="listapag">
+                <li>Ofertas</li>
+                <li>Tiendas Oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+            </ul>
+            <ul class="listacuenta">
+                <li><a href="/registro">Creá tu Cuenta<i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li>Mis Compras<i class="fa-sharp fa-solid fa-basket-shopping"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3 class="titulo">Creá tu cuenta</h3>
+        <form method="post" action="/" class="registro">
+            <div>
+                <label for="fullName" class="labelForm">Nombre y Apellido</label>
+                <input type="text" class="inputRegistro" name="fullName" id="fullName" placeholder="Nombre y Apellido">
+            </div>
+            <div>
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">               
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento" placeholder="mm/dd/yyyy">
+            </div>
+            <div>
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+            </div>
+            <div>
+                <label for="perfil">Perfil de Usuario</label>
+                <input type="radio" name="perfil" id="perfil" value="Comprador">
+                <input type="radio" name="perfil" id="perfil" value="Vendedor">
+            </div>
+            <div>
+                <label for="intereses">Intereses</label>
+                <input type="checkbox" name="intereses" id="intereses" value="Electro">
+                <input type="checkbox" name="intereses" id="intereses" value="Moda">
+                <input type="checkbox" name="intereses" id="intereses" value="Hogar">
+                <input type="checkbox" name="intereses" id="intereses" value="Juguetería">
+                <input type="checkbox" name="intereses" id="intereses" value="Vida Sana">
+            </div>
+            <div>
+                
+            </div>
+        </form>
+    </main>
     
 </body>
 </html>
