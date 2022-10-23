@@ -207,6 +207,11 @@ h3 {
     flex-direction: column;
 }
 
+.foot {
+    display: flex;
+    flex-direction: row;
+}
+
 footer {
     flex-direction: column;
     color: #666;
@@ -262,6 +267,7 @@ footer section i {
     .main {
         justify-content: space-between;
     }
+
     .listapag, .listacuenta {
     display: contents;
 }
